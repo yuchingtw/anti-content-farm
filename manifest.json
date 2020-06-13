@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "內容農場過濾器",
+  "description": "內容農場過濾器",
+  "version": "0.9",
+  "browser_action": {
+    "default_title": "內容農場過濾器",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "history",
+    "webRequest",
+    "storage",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["*://*.google.com/*"]
+    }
+  ]
+}

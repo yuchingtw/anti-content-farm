@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link href="/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container popupsize">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-3">
+            <div class="form-group">
+              <label for="blockKeyword">關鍵字黑名單</label>
+              <textarea
+                id="blockKeyword"
+                class="form-control"
+                rows="5"
+                placeholder="關鍵字黑名單"
+              ></textarea>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form-group">
+              <label for="blockUrl">網址黑名單</label>
+              <textarea
+                id="blockUrl"
+                class="form-control"
+                rows="5"
+                placeholder="網址黑名單"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <button id="restoreButton" class="btn btn-warning">還原預設值</button>
+        </div>
+        <div class="col-4">
+          <button id="submitButton" class="btn btn-success">儲存</button>
+        </div>
+      </div>
+    </div>
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/popper.min.js"></script>
+    <script src="/lib/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+  </body>
+</html>
+
+<style>
+  .popupsize {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+</style>
